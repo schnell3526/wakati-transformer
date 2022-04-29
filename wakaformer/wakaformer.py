@@ -4,8 +4,8 @@ import subprocess
 
 class WakaFormer():
     def __init__(self):
-        self.model = AutoModelForTokenClassification.from_pretrained("schnell3526/wakaformer")
-        self.tokenizer = AutoTokenizer.from_pretrained("schnell3526/wakaformer", use_fast=True)
+        self.model = AutoModelForTokenClassification.from_pretrained("schnell/wakaformer")
+        self.tokenizer = AutoTokenizer.from_pretrained("schnell/wakaformer", use_fast=True)
     
     def wakati(self, text):
         input = self.tokenizer(text, return_tensors="pt")
