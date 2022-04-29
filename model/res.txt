@@ -1,0 +1,148 @@
+04/29/2022 21:31:32 - INFO - __main__ - Distributed environment: MULTI_GPU  Backend: nccl
+Num processes: 1
+Process index: 0
+Local process index: 0
+Device: cuda:0
+Mixed precision type: no
+
+04/29/2022 21:31:36 - WARNING - datasets.builder - Using custom data configuration default-efa90670187490a1
+Downloading and preparing dataset json/default to /home/s-ito/.cache/huggingface/datasets/json/default-efa90670187490a1/0.0.0/ac0ca5f5289a6cf108e706efcf040422dbbfa8e658dee6a819f20d76bb84d26b...
+Downloading data files:   0%|          | 0/1 [00:00<?, ?it/s]Downloading data files: 100%|██████████| 1/1 [00:00<00:00, 3795.75it/s]
+Extracting data files:   0%|          | 0/1 [00:00<?, ?it/s]Extracting data files: 100%|██████████| 1/1 [00:00<00:00, 1000.31it/s]
+Dataset json downloaded and prepared to /home/s-ito/.cache/huggingface/datasets/json/default-efa90670187490a1/0.0.0/ac0ca5f5289a6cf108e706efcf040422dbbfa8e658dee6a819f20d76bb84d26b. Subsequent calls will reuse this data.
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 1005.11it/s]
+04/29/2022 21:31:37 - WARNING - datasets.builder - Using custom data configuration default-efa90670187490a1
+Downloading and preparing dataset json/default to cache/json/default-efa90670187490a1/0.0.0/ac0ca5f5289a6cf108e706efcf040422dbbfa8e658dee6a819f20d76bb84d26b...
+Downloading data files:   0%|          | 0/1 [00:00<?, ?it/s]Downloading data files: 100%|██████████| 1/1 [00:00<00:00, 4056.39it/s]
+Extracting data files:   0%|          | 0/1 [00:00<?, ?it/s]Extracting data files: 100%|██████████| 1/1 [00:00<00:00, 908.25it/s]
+Dataset json downloaded and prepared to cache/json/default-efa90670187490a1/0.0.0/ac0ca5f5289a6cf108e706efcf040422dbbfa8e658dee6a819f20d76bb84d26b. Subsequent calls will reuse this data.
+04/29/2022 21:31:38 - WARNING - datasets.builder - Using custom data configuration default-efa90670187490a1
+04/29/2022 21:31:38 - WARNING - datasets.builder - Reusing dataset json (cache/json/default-efa90670187490a1/0.0.0/ac0ca5f5289a6cf108e706efcf040422dbbfa8e658dee6a819f20d76bb84d26b)
+loading configuration file https://huggingface.co/cl-tohoku/bert-base-japanese-char-whole-word-masking/resolve/main/config.json from cache at /home/s-ito/.cache/huggingface/transformers/5c336b2f260bc7770e321c2971739bd5f3f1566deebf8412c23e01fcf60397eb.f0303bc6711fcbf4a4112a9e9ef5617b593344e3e1ed97bd5eff076bf47ef37e
+Model config BertConfig {
+  "_name_or_path": "cl-tohoku/bert-base-japanese-char-whole-word-masking",
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "classifier_dropout": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1",
+    "2": "LABEL_2",
+    "3": "LABEL_3"
+  },
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1,
+    "LABEL_2": 2,
+    "LABEL_3": 3
+  },
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "position_embedding_type": "absolute",
+  "tokenizer_class": "BertJapaneseTokenizer",
+  "transformers_version": "4.19.0.dev0",
+  "type_vocab_size": 2,
+  "use_cache": true,
+  "vocab_size": 4000
+}
+
+loading configuration file https://huggingface.co/cl-tohoku/bert-base-japanese-char-whole-word-masking/resolve/main/config.json from cache at /home/s-ito/.cache/huggingface/transformers/5c336b2f260bc7770e321c2971739bd5f3f1566deebf8412c23e01fcf60397eb.f0303bc6711fcbf4a4112a9e9ef5617b593344e3e1ed97bd5eff076bf47ef37e
+Model config BertConfig {
+  "_name_or_path": "cl-tohoku/bert-base-japanese-char-whole-word-masking",
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "classifier_dropout": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "position_embedding_type": "absolute",
+  "tokenizer_class": "BertJapaneseTokenizer",
+  "transformers_version": "4.19.0.dev0",
+  "type_vocab_size": 2,
+  "use_cache": true,
+  "vocab_size": 4000
+}
+
+loading file https://huggingface.co/cl-tohoku/bert-base-japanese-char-whole-word-masking/resolve/main/vocab.txt from cache at /home/s-ito/.cache/huggingface/transformers/b217f543ef51fff5fe476e232d6ae33c174fcfe3fab0fc483b4a9d723d10e818.638a09bd367e8bd207b1e57105649fa808a29f24f7cea1198bd14f88ae037822
+loading file https://huggingface.co/cl-tohoku/bert-base-japanese-char-whole-word-masking/resolve/main/added_tokens.json from cache at None
+loading file https://huggingface.co/cl-tohoku/bert-base-japanese-char-whole-word-masking/resolve/main/special_tokens_map.json from cache at None
+loading file https://huggingface.co/cl-tohoku/bert-base-japanese-char-whole-word-masking/resolve/main/tokenizer_config.json from cache at /home/s-ito/.cache/huggingface/transformers/87961e392c764b0c3c7ec12883e6f4908c945793c544bc5f48ef86d50f5d0896.2d6baf2fcd688139fef1fa80fa01cf342f7c979d0012907c4241780d7027e930
+loading configuration file https://huggingface.co/cl-tohoku/bert-base-japanese-char-whole-word-masking/resolve/main/config.json from cache at /home/s-ito/.cache/huggingface/transformers/5c336b2f260bc7770e321c2971739bd5f3f1566deebf8412c23e01fcf60397eb.f0303bc6711fcbf4a4112a9e9ef5617b593344e3e1ed97bd5eff076bf47ef37e
+Model config BertConfig {
+  "_name_or_path": "cl-tohoku/bert-base-japanese-char-whole-word-masking",
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "classifier_dropout": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "position_embedding_type": "absolute",
+  "tokenizer_class": "BertJapaneseTokenizer",
+  "transformers_version": "4.19.0.dev0",
+  "type_vocab_size": 2,
+  "use_cache": true,
+  "vocab_size": 4000
+}
+
+loading weights file https://huggingface.co/cl-tohoku/bert-base-japanese-char-whole-word-masking/resolve/main/pytorch_model.bin from cache at /home/s-ito/.cache/huggingface/transformers/559b866253734aceed8a996f876084ff3f27f610260f48430b9708f0e5fd19af.51bb8ef09cbecb0c11ee9e0f64156e27be65ad8beb02f9668819fc4aaea5238c
+Some weights of the model checkpoint at cl-tohoku/bert-base-japanese-char-whole-word-masking were not used when initializing BertForTokenClassification: ['cls.predictions.transform.dense.weight', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.bias', 'cls.predictions.transform.LayerNorm.bias', 'cls.seq_relationship.bias', 'cls.seq_relationship.weight', 'cls.predictions.decoder.weight', 'cls.predictions.transform.dense.bias']
+- This IS expected if you are initializing BertForTokenClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForTokenClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForTokenClassification were not initialized from the model checkpoint at cl-tohoku/bert-base-japanese-char-whole-word-masking and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Running tokenizer on dataset:   0%|          | 0/1 [00:00<?, ?ba/s]Running tokenizer on dataset: 100%|██████████| 1/1 [00:00<00:00,  5.66ba/s]Running tokenizer on dataset: 100%|██████████| 1/1 [00:00<00:00,  5.65ba/s]
+Running tokenizer on dataset:   0%|          | 0/1 [00:00<?, ?ba/s]Running tokenizer on dataset: 100%|██████████| 1/1 [00:00<00:00, 49.63ba/s]
+04/29/2022 21:31:49 - INFO - __main__ - Sample 654 of the training set: {'input_ids': [2, 95, 785, 14, 62, 74, 19, 395, 20, 16, 18, 7, 189, 20, 1955, 23, 9, 107, 7, 691, 37, 137, 20, 793, 15, 118, 326, 18, 7, 1875, 8, 16, 20, 176, 359, 19, 18, 337, 53, 16, 9, 10, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'token_type_ids': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'attention_mask': [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'labels': [-100, 3, 3, 3, 0, 2, 1, 3, 3, 0, 1, 3, 3, 3, 0, 2, 1, 3, 3, 0, 2, 1, 3, 3, 3, 0, 2, 1, 3, 3, 3, 0, 2, 2, 2, 2, 1, 3, 0, 2, 1, 3, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100]}.
+04/29/2022 21:31:49 - INFO - __main__ - Sample 114 of the training set: {'input_ids': [2, 841, 253, 32, 278, 122, 16, 18, 19, 11, 14, 345, 777, 20, 633, 148, 11, 901, 7, 41, 67, 13, 55, 251, 64, 21, 17, 129, 21, 72, 21, 15, 1069, 79, 444, 46, 623, 306, 20, 36, 11, 10, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'token_type_ids': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'attention_mask': [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'labels': [-100, 0, 1, 3, 0, 1, 0, 1, 0, 1, 3, 0, 1, 3, 0, 2, 1, 3, 3, 0, 2, 2, 1, 0, 2, 1, 3, 0, 2, 2, 1, 3, 0, 1, 0, 1, 0, 1, 3, 0, 1, 3, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100]}.
+04/29/2022 21:31:49 - INFO - __main__ - Sample 25 of the training set: {'input_ids': [2, 345, 206, 6, 1177, 2021, 8, 2123, 31, 23, 18, 19, 11, 1, 289, 845, 304, 32, 31, 340, 15, 722, 11, 1, 1098, 1104, 626, 290, 6, 28, 84, 49, 75, 13, 10, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'token_type_ids': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'attention_mask': [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'labels': [-100, 0, 1, 3, 0, 1, 3, 0, 1, 0, 1, 0, 1, 3, 0, 2, 1, 0, 1, 3, 3, 0, 1, 3, 0, 1, 0, 1, 3, 0, 2, 2, 2, 1, 3, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100]}.
+/home/s-ito/work/wakati/venv/lib/python3.8/site-packages/transformers/optimization.py:306: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+04/29/2022 21:31:50 - INFO - __main__ - ***** Running training *****
+04/29/2022 21:31:50 - INFO - __main__ -   Num examples = 900
+04/29/2022 21:31:50 - INFO - __main__ -   Num Epochs = 3
+04/29/2022 21:31:50 - INFO - __main__ -   Instantaneous batch size per device = 8
+04/29/2022 21:31:50 - INFO - __main__ -   Total train batch size (w. parallel, distributed & accumulation) = 8
+04/29/2022 21:31:50 - INFO - __main__ -   Gradient Accumulation steps = 1
+04/29/2022 21:31:50 - INFO - __main__ -   Total optimization steps = 339
+  0%|          | 0/339 [00:00<?, ?it/s]04/29/2022 21:31:50 - INFO - root - Reducer buckets have been rebuilt in this iteration.
+  1%|          | 2/339 [00:00<00:24, 13.89it/s]  1%|          | 4/339 [00:00<00:20, 16.51it/s]  2%|▏         | 6/339 [00:00<00:19, 17.47it/s]  2%|▏         | 8/339 [00:00<00:18, 17.84it/s]  3%|▎         | 10/339 [00:00<00:18, 17.98it/s]  4%|▎         | 12/339 [00:00<00:18, 18.15it/s]  4%|▍         | 14/339 [00:00<00:17, 18.54it/s]  5%|▍         | 16/339 [00:00<00:17, 18.45it/s]  6%|▌         | 19/339 [00:01<00:16, 19.16it/s]  6%|▋         | 22/339 [00:01<00:16, 19.37it/s]  7%|▋         | 24/339 [00:01<00:16, 19.17it/s]  8%|▊         | 26/339 [00:01<00:16, 18.95it/s]  8%|▊         | 28/339 [00:01<00:16, 18.73it/s]  9%|▉         | 30/339 [00:01<00:16, 18.80it/s]  9%|▉         | 32/339 [00:01<00:16, 18.68it/s] 10%|█         | 34/339 [00:01<00:16, 18.88it/s] 11%|█         | 36/339 [00:01<00:15, 19.11it/s] 12%|█▏        | 39/339 [00:02<00:15, 19.43it/s] 12%|█▏        | 42/339 [00:02<00:15, 19.55it/s] 13%|█▎        | 44/339 [00:02<00:15, 19.54it/s] 14%|█▎        | 46/339 [00:02<00:14, 19.54it/s] 14%|█▍        | 48/339 [00:02<00:14, 19.51it/s] 15%|█▍        | 50/339 [00:02<00:14, 19.29it/s] 15%|█▌        | 52/339 [00:02<00:14, 19.39it/s] 16%|█▌        | 54/339 [00:02<00:14, 19.46it/s] 17%|█▋        | 56/339 [00:02<00:14, 19.50it/s] 17%|█▋        | 58/339 [00:03<00:14, 19.56it/s] 18%|█▊        | 60/339 [00:03<00:14, 19.61it/s] 18%|█▊        | 62/339 [00:03<00:14, 19.22it/s] 19%|█▉        | 64/339 [00:03<00:14, 18.85it/s] 19%|█▉        | 66/339 [00:03<00:14, 18.53it/s] 20%|██        | 68/339 [00:03<00:14, 18.51it/s] 21%|██        | 70/339 [00:03<00:14, 18.66it/s] 21%|██        | 72/339 [00:03<00:14, 18.83it/s] 22%|██▏       | 74/339 [00:03<00:14, 18.85it/s] 22%|██▏       | 76/339 [00:04<00:14, 18.76it/s] 23%|██▎       | 78/339 [00:04<00:13, 18.71it/s] 24%|██▎       | 80/339 [00:04<00:13, 18.95it/s] 24%|██▍       | 82/339 [00:04<00:13, 19.01it/s] 25%|██▌       | 85/339 [00:04<00:13, 19.24it/s] 26%|██▌       | 87/339 [00:04<00:13, 19.29it/s] 26%|██▋       | 89/339 [00:04<00:12, 19.29it/s] 27%|██▋       | 91/339 [00:04<00:12, 19.39it/s] 27%|██▋       | 93/339 [00:04<00:12, 19.37it/s] 28%|██▊       | 95/339 [00:05<00:12, 19.43it/s] 29%|██▊       | 97/339 [00:05<00:12, 19.47it/s] 29%|██▉       | 100/339 [00:05<00:11, 19.97it/s] 30%|███       | 102/339 [00:05<00:12, 19.69it/s] 31%|███       | 104/339 [00:05<00:12, 19.49it/s] 31%|███▏      | 106/339 [00:05<00:12, 19.33it/s] 32%|███▏      | 108/339 [00:05<00:11, 19.29it/s] 32%|███▏      | 110/339 [00:05<00:11, 19.15it/s] 33%|███▎      | 112/339 [00:05<00:12, 18.86it/s]/home/s-ito/work/wakati/venv/lib/python3.8/site-packages/seqeval/metrics/sequence_labeling.py:171: UserWarning: M seems not to be NE tag.
+  warnings.warn('{} seems not to be NE tag.'.format(chunk))
+epoch 0: {'precision': 0.9001260239445494, 'recall': 0.9015462290943516, 'f1': 0.9008355667665143, 'accuracy': 0.9170182841068917}
+ 34%|███▎      | 114/339 [00:06<00:20, 10.83it/s] 34%|███▍      | 116/339 [00:06<00:17, 12.42it/s] 35%|███▍      | 118/339 [00:06<00:15, 13.86it/s] 35%|███▌      | 120/339 [00:06<00:14, 15.15it/s] 36%|███▌      | 122/339 [00:06<00:13, 16.27it/s] 37%|███▋      | 124/339 [00:06<00:12, 16.90it/s] 37%|███▋      | 126/339 [00:06<00:12, 17.70it/s] 38%|███▊      | 128/339 [00:06<00:11, 17.98it/s] 38%|███▊      | 130/339 [00:07<00:11, 18.28it/s] 39%|███▉      | 132/339 [00:07<00:11, 18.36it/s] 40%|███▉      | 134/339 [00:07<00:11, 18.56it/s] 40%|████      | 136/339 [00:07<00:10, 18.75it/s] 41%|████      | 138/339 [00:07<00:10, 19.08it/s] 41%|████▏     | 140/339 [00:07<00:10, 19.05it/s] 42%|████▏     | 142/339 [00:07<00:10, 19.17it/s] 42%|████▏     | 144/339 [00:07<00:10, 19.24it/s] 43%|████▎     | 146/339 [00:07<00:09, 19.30it/s] 44%|████▎     | 148/339 [00:08<00:09, 19.13it/s] 44%|████▍     | 150/339 [00:08<00:09, 19.17it/s] 45%|████▍     | 152/339 [00:08<00:09, 19.19it/s] 45%|████▌     | 154/339 [00:08<00:09, 19.30it/s] 46%|████▋     | 157/339 [00:08<00:09, 19.57it/s] 47%|████▋     | 159/339 [00:08<00:09, 19.53it/s] 47%|████▋     | 161/339 [00:08<00:09, 19.51it/s] 48%|████▊     | 163/339 [00:08<00:08, 19.61it/s] 49%|████▊     | 165/339 [00:08<00:08, 19.51it/s] 49%|████▉     | 167/339 [00:09<00:08, 19.45it/s] 50%|████▉     | 169/339 [00:09<00:08, 19.54it/s] 50%|█████     | 171/339 [00:09<00:08, 19.31it/s] 51%|█████     | 173/339 [00:09<00:08, 19.31it/s] 52%|█████▏    | 175/339 [00:09<00:08, 19.35it/s] 52%|█████▏    | 177/339 [00:09<00:08, 19.30it/s] 53%|█████▎    | 179/339 [00:09<00:08, 19.29it/s] 53%|█████▎    | 181/339 [00:09<00:08, 19.03it/s] 54%|█████▍    | 183/339 [00:09<00:08, 19.03it/s] 55%|█████▍    | 185/339 [00:09<00:08, 18.92it/s] 55%|█████▌    | 187/339 [00:10<00:08, 18.94it/s] 56%|█████▌    | 190/339 [00:10<00:07, 19.34it/s] 57%|█████▋    | 192/339 [00:10<00:07, 19.30it/s] 57%|█████▋    | 194/339 [00:10<00:07, 19.06it/s] 58%|█████▊    | 197/339 [00:10<00:07, 19.37it/s] 59%|█████▊    | 199/339 [00:10<00:07, 19.47it/s] 59%|█████▉    | 201/339 [00:10<00:07, 19.44it/s] 60%|█████▉    | 203/339 [00:10<00:07, 19.40it/s] 60%|██████    | 205/339 [00:10<00:06, 19.25it/s] 61%|██████    | 207/339 [00:11<00:06, 19.11it/s] 62%|██████▏   | 209/339 [00:11<00:06, 19.20it/s] 62%|██████▏   | 211/339 [00:11<00:06, 19.05it/s] 63%|██████▎   | 213/339 [00:11<00:06, 19.30it/s] 63%|██████▎   | 215/339 [00:11<00:06, 19.17it/s] 64%|██████▍   | 217/339 [00:11<00:06, 19.17it/s] 65%|██████▍   | 219/339 [00:11<00:06, 19.31it/s] 65%|██████▌   | 221/339 [00:11<00:06, 19.21it/s] 66%|██████▌   | 223/339 [00:11<00:06, 19.17it/s] 67%|██████▋   | 226/339 [00:12<00:05, 19.54it/s]epoch 1: {'precision': 0.9118016321406152, 'recall': 0.9166929630798359, 'f1': 0.9142407553107788, 'accuracy': 0.930028129395218}
+ 67%|██████▋   | 228/339 [00:12<00:09, 11.31it/s] 68%|██████▊   | 231/339 [00:12<00:08, 13.41it/s] 69%|██████▊   | 233/339 [00:12<00:07, 14.44it/s] 69%|██████▉   | 235/339 [00:12<00:06, 15.59it/s] 70%|██████▉   | 237/339 [00:12<00:06, 16.45it/s] 71%|███████   | 239/339 [00:13<00:05, 17.10it/s] 71%|███████   | 241/339 [00:13<00:05, 17.75it/s] 72%|███████▏  | 243/339 [00:13<00:05, 18.08it/s] 73%|███████▎  | 246/339 [00:13<00:04, 18.76it/s] 73%|███████▎  | 248/339 [00:13<00:04, 19.02it/s] 74%|███████▎  | 250/339 [00:13<00:04, 19.07it/s] 74%|███████▍  | 252/339 [00:13<00:04, 18.99it/s] 75%|███████▍  | 254/339 [00:13<00:04, 19.02it/s] 76%|███████▌  | 256/339 [00:13<00:04, 18.87it/s] 76%|███████▌  | 258/339 [00:14<00:04, 18.48it/s] 77%|███████▋  | 260/339 [00:14<00:04, 18.59it/s] 77%|███████▋  | 262/339 [00:14<00:04, 18.35it/s] 78%|███████▊  | 264/339 [00:14<00:04, 18.37it/s] 78%|███████▊  | 266/339 [00:14<00:03, 18.37it/s] 79%|███████▉  | 268/339 [00:14<00:03, 18.64it/s] 80%|███████▉  | 270/339 [00:14<00:03, 18.66it/s] 80%|████████  | 272/339 [00:14<00:03, 18.73it/s] 81%|████████  | 274/339 [00:14<00:03, 18.77it/s] 81%|████████▏ | 276/339 [00:14<00:03, 19.01it/s] 82%|████████▏ | 278/339 [00:15<00:03, 19.13it/s] 83%|████████▎ | 280/339 [00:15<00:03, 19.10it/s] 83%|████████▎ | 282/339 [00:15<00:02, 19.12it/s] 84%|████████▍ | 284/339 [00:15<00:02, 19.23it/s] 84%|████████▍ | 286/339 [00:15<00:02, 19.33it/s] 85%|████████▍ | 288/339 [00:15<00:02, 19.51it/s] 86%|████████▌ | 291/339 [00:15<00:02, 19.72it/s] 87%|████████▋ | 294/339 [00:15<00:02, 19.73it/s] 87%|████████▋ | 296/339 [00:16<00:02, 19.65it/s] 88%|████████▊ | 298/339 [00:16<00:02, 19.60it/s] 88%|████████▊ | 300/339 [00:16<00:01, 19.58it/s] 89%|████████▉ | 302/339 [00:16<00:01, 19.65it/s] 90%|████████▉ | 304/339 [00:16<00:01, 19.44it/s] 90%|█████████ | 306/339 [00:16<00:01, 19.50it/s] 91%|█████████ | 308/339 [00:16<00:01, 19.51it/s] 91%|█████████▏| 310/339 [00:16<00:01, 19.55it/s] 92%|█████████▏| 312/339 [00:16<00:01, 19.48it/s] 93%|█████████▎| 314/339 [00:16<00:01, 19.49it/s] 93%|█████████▎| 316/339 [00:17<00:01, 19.43it/s] 94%|█████████▍| 318/339 [00:17<00:01, 19.39it/s] 94%|█████████▍| 320/339 [00:17<00:00, 19.02it/s] 95%|█████████▍| 322/339 [00:17<00:00, 19.02it/s] 96%|█████████▌| 324/339 [00:17<00:00, 19.11it/s] 96%|█████████▌| 326/339 [00:17<00:00, 19.08it/s] 97%|█████████▋| 328/339 [00:17<00:00, 19.25it/s] 97%|█████████▋| 330/339 [00:17<00:00, 19.28it/s] 98%|█████████▊| 332/339 [00:17<00:00, 19.14it/s] 99%|█████████▊| 334/339 [00:17<00:00, 19.27it/s] 99%|█████████▉| 336/339 [00:18<00:00, 19.38it/s]100%|█████████▉| 338/339 [00:18<00:00, 19.46it/s]epoch 2: {'precision': 0.9089775561097256, 'recall': 0.9201640896181761, 'f1': 0.9145366159636192, 'accuracy': 0.929324894514768}
+Configuration saved in model/config.json
+Model weights saved in model/pytorch_model.bin
+tokenizer config file saved in model/tokenizer_config.json
+Special tokens file saved in model/special_tokens_map.json
+100%|██████████| 339/339 [00:18<00:00, 17.96it/s]
