@@ -1,6 +1,5 @@
 # WakaFormer
-Japanese sentence segmenter using pre-trained BERT.
-It uses 900 training data which were separated by juman++.
+A simple Japanese pre-tokenizer based on pre-trained BERT. It uses 900 training data which were separated by juman++.
 
 # Install
 
