@@ -2,7 +2,7 @@ from transformers import AutoModelForTokenClassification, AutoTokenizer
 import torch
 import subprocess
 
-class WakaFormer(local=None):
+class WakaFormer():
     def __init__(self):
         self.model = AutoModelForTokenClassification.from_pretrained("schnell3526/wakaformer")
         self.tokenizer = AutoTokenizer.from_pretrained("schnell3526/wakaformer", use_fast=True)

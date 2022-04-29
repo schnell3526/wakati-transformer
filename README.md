@@ -2,12 +2,18 @@
 Japanese sentence segmenter using pre-trained BERT.
 It uses 900 training data which were separated by juman++.
 
+# Install
+
+```shell
+pip install git+https://github.com/schnell3526/wakati-transformer
+```
+
 # how to use
 
 ```python
 from wakaformer import WakaFormer
 wf = WakaFormer()
-wf.wakati("河原研究室は自然言語処理を専門としている研究室です。")
+wf.wakati("人間と同程度に言語を理解することのできる人工知能システムについて研究しています。")
 ```
 
 # For developers
