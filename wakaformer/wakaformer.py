@@ -8,7 +8,8 @@ class WakaFormer():
         self.tokenizer = AutoTokenizer.from_pretrained("schnell/wakaformer", use_fast=True)
     
     def wakati(self, text):
-        input = self.tokenizer(text.replace(" ", "").replace("　", ""), return_tensors="pt")
+        text = text.replace(" ", "").replace("　", "")
+        input = self.tokenizer(text, return_tensors="pt")
         output = self.model(**input)
         res = torch.argmax(output.logits, dim=-1)[:,1:-1].squeeze(0)
 
