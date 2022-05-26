@@ -3,6 +3,7 @@
 torchrun --nproc_per_node 1 train.py \
 --model_name_or_path cl-tohoku/bert-base-japanese-char-whole-word-masking \
 --train_file data.json \
+--validation_file valid.json \
 --text_column_name text \
 --label_column_name label \
 --cache_dir cache \

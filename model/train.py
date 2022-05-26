@@ -223,10 +223,10 @@ def parse_args():
         action="store_true",
         help="Whether to load in all available experiment trackers from the environment and use them for logging.",
     )
-    parser.add_argument(
-        "--validation_split_percentage",
-        default=10
-    )
+    # parser.add_argument(
+    #     "--validation_split_percentage",
+    #     default=10
+    # )
     parser.add_argument(
         "--cache_dir"
     )
@@ -310,19 +310,19 @@ def main():
         raw_datasets = load_dataset(args.dataset_name, args.dataset_config_name)
     else:
         extension = args.train_file.split(".")[-1]
-        raw_datasets = load_dataset(extension, data_files=args.train_file)
-        raw_datasets["validation"] = load_dataset(
-            extension,
-            data_files=args.train_file,
-            split=f"train[:{args.validation_split_percentage}%]",
-            cache_dir=args.cache_dir,
-        )
-        raw_datasets["train"] = load_dataset(
-            extension,
-            data_files=args.train_file,
-            split=f"train[{args.validation_split_percentage}%:]",
-            cache_dir=args.cache_dir,
-        )
+        raw_datasets = load_dataset(extension, data_files={'train':args.train_file, 'validation':args.validation_file})
+        # raw_datasets["validation"] = load_dataset(
+        #     extension,
+        #     data_files=args.train_file,
+        #     split=f"train[:{args.validation_split_percentage}%]",
+        #     cache_dir=args.cache_dir,
+        # )
+        # raw_datasets["train"] = load_dataset(
+        #     extension,
+        #     data_files=args.train_file,
+        #     split=f"train[{args.validation_split_percentage}%:]",
+        #     cache_dir=args.cache_dir,
+        # )
     # Trim a number of training examples
     if args.debug:
         for split in raw_datasets.keys():
